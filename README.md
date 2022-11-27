@@ -1,3 +1,9 @@
+# Crypto Wallet React APP
+
+Purpose of this app was to keep practicing, featuring React + Axios + Firebase
+
+using router-dom for dynamic routing
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

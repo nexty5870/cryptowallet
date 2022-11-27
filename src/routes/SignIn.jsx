@@ -3,7 +3,7 @@ import { AiFillLock, AiOutlineMail } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
 import { signIn, UserAuth } from "../context/AuthContext";
 
-const SignIn = () => {
+const Signin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -25,7 +25,7 @@ const SignIn = () => {
   return (
     <div>
       <div className="max-w-[400px] mx-auto min-h-[600px] px-4 py-20">
-        <h1 className="text-2xl font-bold">Sign in</h1>
+        <h1 className="text-2xl font-bold">Sign In</h1>
         <form onSubmit={handleSubmit}>
           <div className="my-4">
             <label>Email</label>
@@ -55,8 +55,7 @@ const SignIn = () => {
         </form>
         <p className="my-4">
           Don't have an account?{" "}
-          <Link className="text-accent" to="/signup">
-            {" "}
+          <Link to="/signup" className="text-accent">
             Sign up
           </Link>
         </p>
@@ -65,4 +64,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default Signin;

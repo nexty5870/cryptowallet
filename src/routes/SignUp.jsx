@@ -1,10 +1,9 @@
-import { async } from "@firebase/util";
 import React, { useState } from "react";
 import { AiFillLock, AiOutlineMail } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
 import { UserAuth } from "../context/AuthContext";
 
-const SignUp = () => {
+const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -57,7 +56,7 @@ const SignUp = () => {
         </form>
         <p className="my-4">
           Already have an account?{" "}
-          <Link className="text-accent" to="/signin">
+          <Link to="/signin" className="text-accent">
             Sign in
           </Link>
         </p>
@@ -66,4 +65,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default Signup;
